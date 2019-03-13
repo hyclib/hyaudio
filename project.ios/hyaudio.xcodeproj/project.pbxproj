@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4545F2A8196942910050C2D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4545F2A7196942910050C2D7 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4545F2E0196943A20050C2D7 /* codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4545F2D4196943A20050C2D7 /* codec.cpp */; };
+		4545F2E1196943A20050C2D7 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4545F2D6196943A20050C2D7 /* dllmain.cpp */; };
+		4545F2E2196943A20050C2D7 /* audioAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4545F2D9196943A20050C2D7 /* audioAL.cpp */; };
+		4545F2E3196943A20050C2D7 /* audioBufferMgrAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4545F2DB196943A20050C2D7 /* audioBufferMgrAL.cpp */; };
+		4545F2E4196943A20050C2D7 /* audioSystemAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4545F2DD196943A20050C2D7 /* audioSystemAL.cpp */; };
+		4558460D196BEDB5006915B8 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4558460C196BEDB5006915B8 /* OpenAL.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		45584614196BF709006915B8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4558460E196BEDBB006915B8 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4558461B196CED8A006915B8 /* libhyc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4558461A196CED8A006915B8 /* libhyc.a */; };
+		45584627196D50F5006915B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4545F2A7196942910050C2D7 /* Foundation.framework */; };
+		45584629196D50F5006915B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45584628196D50F5006915B8 /* CoreGraphics.framework */; };
+		4558462A196D50F5006915B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4545F2B8196942910050C2D7 /* UIKit.framework */; };
+		45584630196D50F5006915B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4558462E196D50F5006915B8 /* InfoPlist.strings */; };
+		45584632196D50F5006915B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45584631196D50F5006915B8 /* main.m */; };
+		45584636196D50F5006915B8 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45584635196D50F5006915B8 /* AppDelegate.mm */; };
+		45584638196D50F5006915B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45584637196D50F5006915B8 /* Images.xcassets */; };
+		45584651196D510A006915B8 /* libhyaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4545F2A4196942910050C2D7 /* libhyaudio.a */; };
+		45584652196D511C006915B8 /* libhyc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4558461A196CED8A006915B8 /* libhyc.a */; };
+		45584654196D512F006915B8 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 45584653196D512F006915B8 /* assets */; };
+		45584655196D5228006915B8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4558460E196BEDBB006915B8 /* AudioToolbox.framework */; };
+		45584656196D523D006915B8 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4558460C196BEDB5006915B8 /* OpenAL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4545F2A2196942910050C2D7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4545F2A4196942910050C2D7 /* libhyaudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhyaudio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4545F2A7196942910050C2D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4545F2B5196942910050C2D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4545F2B8196942910050C2D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4545F2CF196943A20050C2D7 /* hyaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hyaudio.h; sourceTree = "<group>"; };
+		4545F2D0196943A20050C2D7 /* hyaudioPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hyaudioPlatform.h; sourceTree = "<group>"; };
+		4545F2D1196943A20050C2D7 /* hyaudioSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hyaudioSystem.h; sourceTree = "<group>"; };
+		4545F2D4196943A20050C2D7 /* codec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = codec.cpp; sourceTree = "<group>"; };
+		4545F2D5196943A20050C2D7 /* codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec.h; sourceTree = "<group>"; };
+		4545F2D6196943A20050C2D7 /* dllmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dllmain.cpp; sourceTree = "<group>"; };
+		4545F2D7196943A20050C2D7 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		4545F2D9196943A20050C2D7 /* audioAL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioAL.cpp; sourceTree = "<group>"; };
+		4545F2DA196943A20050C2D7 /* audioAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioAL.h; sourceTree = "<group>"; };
+		4545F2DB196943A20050C2D7 /* audioBufferMgrAL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioBufferMgrAL.cpp; sourceTree = "<group>"; };
+		4545F2DC196943A20050C2D7 /* audioBufferMgrAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioBufferMgrAL.h; sourceTree = "<group>"; };
+		4545F2DD196943A20050C2D7 /* audioSystemAL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioSystemAL.cpp; sourceTree = "<group>"; };
+		4545F2DE196943A20050C2D7 /* audioSystemAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioSystemAL.h; sourceTree = "<group>"; };
+		4545F2DF196943A20050C2D7 /* preheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preheader.h; sourceTree = "<group>"; };
+		4558460C196BEDB5006915B8 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		4558460E196BEDBB006915B8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		45584612196BF0F9006915B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4558461A196CED8A006915B8 /* libhyc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhyc.a; path = "../bin/Debug-iphonesimulator/libhyc.a"; sourceTree = "<group>"; };
+		45584626196D50F5006915B8 /* hyaudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyaudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45584628196D50F5006915B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4558462D196D50F5006915B8 /* hyaudioDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hyaudioDemo-Info.plist"; sourceTree = "<group>"; };
+		4558462F196D50F5006915B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45584631196D50F5006915B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45584633196D50F5006915B8 /* hyaudioDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hyaudioDemo-Prefix.pch"; sourceTree = "<group>"; };
+		45584634196D50F5006915B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45584635196D50F5006915B8 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		45584637196D50F5006915B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45584653196D512F006915B8 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../demo/assets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4545F2A1196942910050C2D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4558461B196CED8A006915B8 /* libhyc.a in Frameworks */,
+				45584614196BF709006915B8 /* AudioToolbox.framework in Frameworks */,
+				4558460D196BEDB5006915B8 /* OpenAL.framework in Frameworks */,
+				4545F2A8196942910050C2D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45584623196D50F5006915B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45584656196D523D006915B8 /* OpenAL.framework in Frameworks */,
+				45584655196D5228006915B8 /* AudioToolbox.framework in Frameworks */,
+				45584652196D511C006915B8 /* libhyc.a in Frameworks */,
+				45584651196D510A006915B8 /* libhyaudio.a in Frameworks */,
+				45584629196D50F5006915B8 /* CoreGraphics.framework in Frameworks */,
+				4558462A196D50F5006915B8 /* UIKit.framework in Frameworks */,
+				45584627196D50F5006915B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4545F29B196942910050C2D7 = {
+			isa = PBXGroup;
+			children = (
+				4545F2CD196943930050C2D7 /* classes */,
+				4558462B196D50F5006915B8 /* hyaudioDemo */,
+				4545F2A6196942910050C2D7 /* Frameworks */,
+				4545F2A5196942910050C2D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4545F2A5196942910050C2D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4545F2A4196942910050C2D7 /* libhyaudio.a */,
+				45584626196D50F5006915B8 /* hyaudioDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4545F2A6196942910050C2D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4558461A196CED8A006915B8 /* libhyc.a */,
+				45584612196BF0F9006915B8 /* AVFoundation.framework */,
+				4558460E196BEDBB006915B8 /* AudioToolbox.framework */,
+				4558460C196BEDB5006915B8 /* OpenAL.framework */,
+				4545F2A7196942910050C2D7 /* Foundation.framework */,
+				4545F2B5196942910050C2D7 /* XCTest.framework */,
+				4545F2B8196942910050C2D7 /* UIKit.framework */,
+				45584628196D50F5006915B8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4545F2CD196943930050C2D7 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				4545F2CE196943A20050C2D7 /* include */,
+				4545F2D2196943A20050C2D7 /* source */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		4545F2CE196943A20050C2D7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4545F2CF196943A20050C2D7 /* hyaudio.h */,
+				4545F2D0196943A20050C2D7 /* hyaudioPlatform.h */,
+				4545F2D1196943A20050C2D7 /* hyaudioSystem.h */,
+			);
+			name = include;
+			path = ../include;
+			sourceTree = "<group>";
+		};
+		4545F2D2196943A20050C2D7 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				4545F2D3196943A20050C2D7 /* codec */,
+				4545F2D6196943A20050C2D7 /* dllmain.cpp */,
+				4545F2D7196943A20050C2D7 /* global.h */,
+				4545F2D8196943A20050C2D7 /* openal */,
+			);
+			name = source;
+			path = ../source;
+			sourceTree = "<group>";
+		};
+		4545F2D3196943A20050C2D7 /* codec */ = {
+			isa = PBXGroup;
+			children = (
+				4545F2D4196943A20050C2D7 /* codec.cpp */,
+				4545F2D5196943A20050C2D7 /* codec.h */,
+			);
+			path = codec;
+			sourceTree = "<group>";
+		};
+		4545F2D8196943A20050C2D7 /* openal */ = {
+			isa = PBXGroup;
+			children = (
+				4545F2D9196943A20050C2D7 /* audioAL.cpp */,
+				4545F2DA196943A20050C2D7 /* audioAL.h */,
+				4545F2DB196943A20050C2D7 /* audioBufferMgrAL.cpp */,
+				4545F2DC196943A20050C2D7 /* audioBufferMgrAL.h */,
+				4545F2DD196943A20050C2D7 /* audioSystemAL.cpp */,
+				4545F2DE196943A20050C2D7 /* audioSystemAL.h */,
+				4545F2DF196943A20050C2D7 /* preheader.h */,
+			);
+			path = openal;
+			sourceTree = "<group>";
+		};
+		4558462B196D50F5006915B8 /* hyaudioDemo */ = {
+			isa = PBXGroup;
+			children = (
+				45584653196D512F006915B8 /* assets */,
+				45584634196D50F5006915B8 /* AppDelegate.h */,
+				45584635196D50F5006915B8 /* AppDelegate.mm */,
+				45584637196D50F5006915B8 /* Images.xcassets */,
+				4558462C196D50F5006915B8 /* Supporting Files */,
+			);
+			path = hyaudioDemo;
+			sourceTree = "<group>";
+		};
+		4558462C196D50F5006915B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4558462D196D50F5006915B8 /* hyaudioDemo-Info.plist */,
+				4558462E196D50F5006915B8 /* InfoPlist.strings */,
+				45584631196D50F5006915B8 /* main.m */,
+				45584633196D50F5006915B8 /* hyaudioDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4545F2A3196942910050C2D7 /* hyaudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4545F2C7196942910050C2D7 /* Build configuration list for PBXNativeTarget "hyaudio" */;
+			buildPhases = (
+				4545F2A0196942910050C2D7 /* Sources */,
+				4545F2A1196942910050C2D7 /* Frameworks */,
+				4545F2A2196942910050C2D7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hyaudio;
+			productName = hyaudio;
+			productReference = 4545F2A4196942910050C2D7 /* libhyaudio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		45584625196D50F5006915B8 /* hyaudioDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4558464B196D50F6006915B8 /* Build configuration list for PBXNativeTarget "hyaudioDemo" */;
+			buildPhases = (
+				45584622196D50F5006915B8 /* Sources */,
+				45584623196D50F5006915B8 /* Frameworks */,
+				45584624196D50F5006915B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hyaudioDemo;
+			productName = hyaudioDemo;
+			productReference = 45584626196D50F5006915B8 /* hyaudioDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4545F29C196942910050C2D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hy;
+			};
+			buildConfigurationList = 4545F29F196942910050C2D7 /* Build configuration list for PBXProject "hyaudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4545F29B196942910050C2D7;
+			productRefGroup = 4545F2A5196942910050C2D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4545F2A3196942910050C2D7 /* hyaudio */,
+				45584625196D50F5006915B8 /* hyaudioDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45584624196D50F5006915B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45584654196D512F006915B8 /* assets in Resources */,
+				45584630196D50F5006915B8 /* InfoPlist.strings in Resources */,
+				45584638196D50F5006915B8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4545F2A0196942910050C2D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4545F2E3196943A20050C2D7 /* audioBufferMgrAL.cpp in Sources */,
+				4545F2E0196943A20050C2D7 /* codec.cpp in Sources */,
+				4545F2E2196943A20050C2D7 /* audioAL.cpp in Sources */,
+				4545F2E1196943A20050C2D7 /* dllmain.cpp in Sources */,
+				4545F2E4196943A20050C2D7 /* audioSystemAL.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45584622196D50F5006915B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45584636196D50F5006915B8 /* AppDelegate.mm in Sources */,
+				45584632196D50F5006915B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4558462E196D50F5006915B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4558462F196D50F5006915B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4545F2C5196942910050C2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "../../../../hy_bin/latest/libs/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-64";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = "$(PROJECT_DIR)/../bin";
+				USER_HEADER_SEARCH_PATHS = "../ext ../../../../hy_bin/latest/include";
+			};
+			name = Debug;
+		};
+		4545F2C6196942910050C2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "../../../../hy_bin/latest/libs/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-64";
+				SDKROOT = iphoneos;
+				SYMROOT = "$(PROJECT_DIR)/../bin";
+				USER_HEADER_SEARCH_PATHS = "../ext ../../../../hy_bin/latest/include";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4545F2C8196942910050C2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/hyaudio.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4545F2C9196942910050C2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/hyaudio.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4558464C196D50F6006915B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hyaudioDemo/hyaudioDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hyaudioDemo/hyaudioDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4558464D196D50F6006915B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hyaudioDemo/hyaudioDemo-Prefix.pch";
+				INFOPLIST_FILE = "hyaudioDemo/hyaudioDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4545F29F196942910050C2D7 /* Build configuration list for PBXProject "hyaudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4545F2C5196942910050C2D7 /* Debug */,
+				4545F2C6196942910050C2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4545F2C7196942910050C2D7 /* Build configuration list for PBXNativeTarget "hyaudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4545F2C8196942910050C2D7 /* Debug */,
+				4545F2C9196942910050C2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4558464B196D50F6006915B8 /* Build configuration list for PBXNativeTarget "hyaudioDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4558464C196D50F6006915B8 /* Debug */,
+				4558464D196D50F6006915B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4545F29C196942910050C2D7 /* Project object */;
+}

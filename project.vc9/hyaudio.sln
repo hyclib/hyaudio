@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hyaudio", "hyaudio.vcproj", "{71489098-D222-4457-808D-41567F346BA5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demo", "demo.vcproj", "{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{71489098-D222-4457-808D-41567F346BA5} = {71489098-D222-4457-808D-41567F346BA5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug.unicode|Win32 = Debug.unicode|Win32
+		Debug|Win32 = Debug|Win32
+		Release.unicode|Win32 = Release.unicode|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71489098-D222-4457-808D-41567F346BA5}.Debug.unicode|Win32.ActiveCfg = Debug.unicode|Win32
+		{71489098-D222-4457-808D-41567F346BA5}.Debug.unicode|Win32.Build.0 = Debug.unicode|Win32
+		{71489098-D222-4457-808D-41567F346BA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71489098-D222-4457-808D-41567F346BA5}.Debug|Win32.Build.0 = Debug|Win32
+		{71489098-D222-4457-808D-41567F346BA5}.Release.unicode|Win32.ActiveCfg = Release.unicode|Win32
+		{71489098-D222-4457-808D-41567F346BA5}.Release.unicode|Win32.Build.0 = Release.unicode|Win32
+		{71489098-D222-4457-808D-41567F346BA5}.Release|Win32.ActiveCfg = Release|Win32
+		{71489098-D222-4457-808D-41567F346BA5}.Release|Win32.Build.0 = Release|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Debug.unicode|Win32.ActiveCfg = Debug.unicode|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Debug.unicode|Win32.Build.0 = Debug.unicode|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Debug|Win32.Build.0 = Debug|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Release.unicode|Win32.ActiveCfg = Release.unicode|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Release.unicode|Win32.Build.0 = Release.unicode|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Release|Win32.ActiveCfg = Release|Win32
+		{745AC28A-9D5A-4868-A4BE-EBA6F17CC6CF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
